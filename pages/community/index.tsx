@@ -6,7 +6,7 @@ const Community: NextPage = () => {
     const [title, setTitle] = useState <string> ("hello")
     return (<div>
         Community{" "}
-        <button onClick={() => alert ("HelloMIT")} style={{margin: "15px"}}> PressMe</button>
+        <button onClick={() => alert ("HelloMIT")} style={{margin: "15px"}} > PressMe</button>
         </div>);
 };
 
