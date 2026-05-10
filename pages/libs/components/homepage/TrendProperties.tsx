@@ -27,6 +27,7 @@ const TrendProperties = () => {
             </div>
           </Box>
         </Stack>
+
         <Stack className={"card-box"}>
           {trendProperties.length === 0 ? (
             <Box className={"empty-list"}>Trends Empty</Box>
@@ -43,19 +44,19 @@ const TrendProperties = () => {
                 el: ".swiper-trend-pagination",
               }}
             >
-              {trendProperties.map((property, index) => {
-                return (
-                  <SwiperSlide key={index} className={"trend-property-slide"}>
-                    <TrendPropertyCard />
-                  </SwiperSlide>
-                );
-              })}
-            </Swiper>
-          )}
-        </Stack>
-      </Stack>
-    </Stack>
+            {trendProperties.map((property, index) => {
+  return (
+    <SwiperSlide key={index} className={"trend-property-slide"}>
+      <TrendPropertyCard />
+    </SwiperSlide>
   );
+})}
+</Swiper>
+)}
+</Stack>
+</Stack>
+</Stack>
+);
 };
 
 export default TrendProperties;

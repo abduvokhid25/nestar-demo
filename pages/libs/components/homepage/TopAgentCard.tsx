@@ -1,17 +1,25 @@
 import React from "react";
-import { Stack } from "@mui/material";
+import { Stack, Box } from "@mui/material";
 
-const TopAgentsCard = () => {
+interface TopAgentCardProps {
+  name?: string;
+  role?: string;
+  imageSrc?: string;
+}
+
+const TopAgentCard = ({
+  name = "Agent",
+  imageSrc = "/img/profile/girl.svg",
+}: TopAgentCardProps) => {
   return (
-    <Stack className="top-agents-card">
-      <img
-        src="/img/profile/girl.svg"
-        alt="agent"
-      />
-      <strong>Martin</strong>
-      <span>Agent</span>
-    </Stack>
+   <Stack className={"top-agent-card"}>
+  <img src={imageSrc} alt="agent" />
+
+  <Box className={"agent-info"}>
+    <strong>{name}</strong>
+  </Box>
+</Stack>
   );
 };
 
-export default TopAgentsCard;
+export default TopAgentCard;

@@ -4,6 +4,7 @@
 const nextConfig = {
   /* config options here */
   reactStrictMode: true,
+  transpilePackages: ['swiper'],
 };
 
 export default nextConfig;

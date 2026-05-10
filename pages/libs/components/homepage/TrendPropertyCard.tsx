@@ -10,18 +10,18 @@ const TrendPropertyCard = () => {
       <Box
         className="card-img"
         style={{
-          backgroundImage: 'url("/img/banner/types/house.webp")',
+          backgroundImage: 'url("/img/banner/types/apartment.webp")',
         }}
       >
-        <div className="price">$420,000</div>
+        <div>$420000</div>
       </Box>
       <Box className="info">
-        <strong className="title">Kingston Buildings</strong>
-        <p className="desc">California City, CA, USA</p>
+        <strong className="title">Run Will Buildings</strong>
+        <p className="desc">Seoul Gangnam Apartments</p>
         <div className="options">
           <div>
             <img src="/img/icons/bed.svg" alt="" />
-            <span>5 bed</span>
+            <span>3 bed</span>
           </div>
           <div>
             <img src="/img/icons/room.svg" alt="" />
@@ -29,21 +29,21 @@ const TrendPropertyCard = () => {
           </div>
           <div>
             <img src="/img/icons/expand.svg" alt="" />
-            <span>250 m²</span>
+            <span>250 m2</span>
           </div>
         </div>
         <Divider sx={{ mt: "15px", mb: "17px" }} />
         <div className="bott">
-          <p>Rent</p>  {/* ✅ span -> p */}
+          <p>Rent</p>
           <div className="view-like-box">
             <IconButton color="default">
               <RemoveRedEyeIcon />
             </IconButton>
-            <Typography className="view-cnt">120</Typography>  {/* ✅ */}
+            <Typography className="view-cnt">120</Typography>
             <IconButton color="default">
               <FavoriteIcon />
             </IconButton>
-            <Typography className="view-cnt">200</Typography>  {/* ✅ */}
+            <Typography className="view-cnt">200</Typography>
           </div>
         </div>
       </Box>
